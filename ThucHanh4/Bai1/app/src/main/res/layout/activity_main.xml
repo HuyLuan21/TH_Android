@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <!-- Label "Type text:" -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Type text:"
+        android:textColor="#000"
+        android:textSize="14sp"
+        android:layout_marginBottom="4dp"/>
+
+    <!-- EditText nhập liệu -->
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ddd"
+        android:textColor="#000000"
+        android:paddingHorizontal="8dp"
+        android:paddingVertical="6dp"
+        android:inputType="textMultiLine"
+        android:maxLines="1"
+        android:imeOptions="actionDone"
+        android:layout_marginBottom="8dp"/>
+
+    <!-- Nút Please Click Me! -->
+    <Button
+        android:id="@+id/btnAdd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Please Click Me!"
+        android:layout_marginBottom="8dp"/>
+
+    <!-- Label "List of value:" -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="List of value:"
+        android:textColor="#000"
+        android:textSize="14sp"
+        android:layout_marginBottom="4dp"/>
+
+    <!-- ListView hiển thị danh sách -->
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:dividerHeight="1dp"/>
+
+</LinearLayout>
